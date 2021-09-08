@@ -6,6 +6,7 @@ import 'package:shop/pages/cart_page.dart';
 import 'package:shop/pages/orders_page.dart';
 import 'package:shop/pages/product_detail_page.dart';
 import 'package:shop/pages/product_overview_page.dart';
+import 'package:shop/pages/products_page.dart';
 import 'package:shop/utils/app_routes.dart';
 import 'models/cart.dart';
 
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.CART_PAGE: (ctx) => CartPage(),
           AppRoutes.HOME: (ctx) => ProductOverViewPage(),
           AppRoutes.ORDERS: (ctx) => OrdersPage(),
+          AppRoutes.PRODUCTS_MANAGEMENT: (ctx) => ProductsPage(),
 
           //Para ver o Exemplo de Inhereted Widget descomente a linha de baixo
           //comente a linha acima e envolva o MaterialApp com um CounterProvider

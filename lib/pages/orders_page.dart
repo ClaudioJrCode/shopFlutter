@@ -11,7 +11,6 @@ class OrdersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final orders = Provider.of<OrderList>(context);
-    print(orders.itemsCount);
     return Scaffold(
       appBar: AppBarWidget(title: 'My Orders'),
       drawer: AppDrawer(),
@@ -23,13 +22,7 @@ class OrdersPage extends StatelessWidget {
   }
 }
 
-class AppBarWidge extends StatelessWidget {
-  const AppBarWidge({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AppBar(title: Text('My Orders'));
-  }
+@override
+Widget build(BuildContext context) {
+  return AppBar(title: Text('My Orders'));
 }

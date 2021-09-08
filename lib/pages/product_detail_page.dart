@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop/components/appbar.dart';
 import 'package:shop/models/product.dart';
 
 class ProductDetailPage extends StatelessWidget {
@@ -12,10 +13,7 @@ class ProductDetailPage extends StatelessWidget {
         ModalRoute.of(context)?.settings.arguments as Product;
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(product.name),
-      ),
+      appBar: AppBarWidget(title: product.name),
       body: SingleChildScrollView(
         child: Column(
           children: [

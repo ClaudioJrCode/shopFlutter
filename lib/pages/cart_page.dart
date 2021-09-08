@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shop/components/appbar.dart';
 import 'package:shop/components/cart_item_widget.dart';
 import 'package:shop/models/cart.dart';
 import 'package:shop/models/order_list.dart';
@@ -10,10 +11,7 @@ class CartPage extends StatelessWidget {
     final Cart cart = Provider.of(context);
     final items = cart.items.values.toList();
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('Your Cart'),
-      ),
+      appBar: AppBarWidget(title: 'Your Cart'),
       body: Column(
         children: [
           Card(

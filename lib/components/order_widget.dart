@@ -10,7 +10,7 @@ class OrderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: Text('R\$${order.total.toStringAsFixed(2)}'),
+        title: Text('R\$ ${order.total.toStringAsFixed(2)}'),
         subtitle: Text(DateFormat('dd/mm/yyyy hh:mm').format(order.date))
       ),
     );

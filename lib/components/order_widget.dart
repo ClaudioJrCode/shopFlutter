@@ -41,7 +41,7 @@ class _OrderWidgetState extends State<OrderWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text('${product.quantity}x ${product.name}'),
-                          Text('${product.price}')
+                          Text('${product.price.toStringAsFixed(2)}')
                         ],
                       ),
                     )

@@ -5,11 +5,11 @@ import 'package:shop/models/product_list.dart';
 import 'package:shop/pages/cart_page.dart';
 import 'package:shop/pages/orders_page.dart';
 import 'package:shop/pages/product_detail_page.dart';
+import 'package:shop/pages/product_form_page.dart';
 import 'package:shop/pages/product_overview_page.dart';
 import 'package:shop/pages/products_page.dart';
 import 'package:shop/utils/app_routes.dart';
 import 'models/cart.dart';
-
 
 void main() {
   runApp(MyApp());
@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.HOME: (ctx) => ProductOverViewPage(),
           AppRoutes.ORDERS: (ctx) => OrdersPage(),
           AppRoutes.PRODUCTS_MANAGEMENT: (ctx) => ProductsPage(),
+          AppRoutes.PRODUCT_FORM: (ctx) => ProductFormPage(),
 
           //Para ver o Exemplo de Inhereted Widget descomente a linha de baixo
           //comente a linha acima e envolva o MaterialApp com um CounterProvider
@@ -51,7 +52,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;

@@ -9,7 +9,7 @@ class OrderList with ChangeNotifier {
 
   List<Order> get items => [..._items];
 
-  int get itemsCount => items.length;
+  int get itemsCount => _items.length;
 
   void addOrder(Cart cart) {
     _items.insert(
